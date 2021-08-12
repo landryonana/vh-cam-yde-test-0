@@ -164,7 +164,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 #django_heroku.settings(locals())
 CLOUDINARY_STORAGE = {
@@ -173,6 +172,4 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': 'aJvmF3SsffpBJFzVUcF8Bi6JPuM'
 }
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 DEFAULT_FILE_STORAGE='cloudinary_storage.storage.MediaCloudinaryStorage'
